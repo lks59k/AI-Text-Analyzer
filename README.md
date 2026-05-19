@@ -26,7 +26,7 @@ Extension Chrome qui analyse un texte et donne une estimation IA vs humain.
 ## Installation
 
 ```bash
-git clone https://github.com/tonpseudo/ai-text-analyzer.git
+git clone https://github.com/lks59k/AI-Text-Analyzer.git
 ```
 
 Puis :
