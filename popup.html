@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self';" />
+  <title>AI Text Analyzer</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>AI Analyzer</h1>
+      <p id="headerSubtitle"></p>
+    </div>
+
+    <textarea id="textInput" placeholder=""></textarea>
+
+    <button id="analyzeBtn"></button>
+
+    <div id="validationError" class="error-msg"></div>
+
+    <div id="loadingSection">
+      <div class="loader"></div>
+      <p id="analyzingText"></p>
+    </div>
+
+    <div id="resultSection">
+      <div class="circle-wrapper">
+        <svg class="progress-ring" width="160" height="160">
+          <circle class="ring-bg" stroke-width="12" fill="transparent" r="70" cx="80" cy="80" />
+          <circle id="aiRing" class="ai-ring" stroke-width="12" fill="transparent" r="70" cx="80" cy="80" />
+        </svg>
+        <div class="score-content">
+          <h2 id="scoreText">0%</h2>
+          <span id="aiLabel"></span>
+        </div>
+      </div>
+
+      <div class="analysis-box">
+        <h4 id="patternsTitle"></h4>
+        <ul id="analysisList"></ul>
+      </div>
+    </div>
+
+  </div>
+
+  <footer id="footer"></footer>
+
+  <script src="analyzer.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
